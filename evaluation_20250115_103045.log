@@ -1,0 +1,85 @@
+2025-01-15 10:30:45,123 - INFO - Starting evaluation session with GPT-4 using few_shot prompting
+2025-01-15 10:30:45,124 - INFO - Loading episodes from android_world_data/
+2025-01-15 10:30:45,156 - INFO - Loaded 150 total episodes, selecting 10 for evaluation
+2025-01-15 10:30:45,157 - INFO - Starting episode gmail_compose_001: Compose and send an email to john@example.com with subject 'Meeting Tomorrow'
+2025-01-15 10:30:46,234 - INFO - Step 1: Action='CLICK("Compose")', Truth='CLICK("Compose")', Match=True
+2025-01-15 10:30:47,145 - INFO - Step 2: Action='CLICK("To")', Truth='CLICK("To")', Match=True
+2025-01-15 10:30:48,067 - INFO - Step 3: Action='TYPE("john@example.com")', Truth='TYPE("john@example.com")', Match=True
+2025-01-15 10:30:49,123 - INFO - Step 4: Action='CLICK("Subject")', Truth='CLICK("Subject")', Match=True
+2025-01-15 10:30:50,234 - INFO - Step 5: Action='TYPE("Meeting Tomorrow")', Truth='TYPE("Meeting Tomorrow")', Match=True
+2025-01-15 10:30:51,178 - INFO - Step 6: Action='CLICK("Body")', Truth='CLICK("Body")', Match=True
+2025-01-15 10:30:52,089 - INFO - Step 7: Action='CLICK("Send")', Truth='CLICK("Send")', Match=False
+2025-01-15 10:30:52,090 - INFO - Episode gmail_compose_001 completed: Success=True, Accuracy=0.86
+2025-01-15 10:30:52,091 - INFO - Starting episode settings_wifi_002: Enable WiFi and connect to network 'HomeNetwork'
+2025-01-15 10:30:53,156 - INFO - Step 1: Action='CLICK("WiFi")', Truth='CLICK("WiFi")', Match=True
+2025-01-15 10:30:54,234 - INFO - Step 2: Action='CLICK("WiFi Toggle")', Truth='CLICK("WiFi Toggle")', Match=True
+2025-01-15 10:30:55,178 - ERROR - Step 3: Action='CLICK("OfficeWiFi")', Truth='CLICK("HomeNetwork")', Match=False
+2025-01-15 10:30:56,123 - ERROR - Step 4: Action='TYPE("wrongpassword")', Truth='TYPE("homepass123")', Match=False
+2025-01-15 10:30:57,089 - INFO - Step 5: Action='CLICK("Connect")', Truth='CLICK("Connect")', Match=True
+2025-01-15 10:30:57,090 - INFO - Episode settings_wifi_002 completed: Success=False, Accuracy=0.60
+2025-01-15 10:30:57,091 - INFO - Starting episode calculator_basic_003: Calculate 15 * 8 + 22
+2025-01-15 10:30:58,123 - INFO - Step 1: Action='CLICK("1")', Truth='CLICK("1")', Match=True
+2025-01-15 10:30:59,067 - INFO - Step 2: Action='CLICK("5")', Truth='CLICK("5")', Match=True
+2025-01-15 10:31:00,145 - INFO - Step 3: Action='CLICK("*")', Truth='CLICK("*")', Match=True
+2025-01-15 10:31:01,234 - INFO - Step 4: Action='CLICK("8")', Truth='CLICK("8")', Match=True
+2025-01-15 10:31:02,178 - INFO - Step 5: Action='CLICK("+")', Truth='CLICK("+")', Match=True
+2025-01-15 10:31:03,089 - INFO - Step 6: Action='CLICK("2")', Truth='CLICK("2")', Match=True
+2025-01-15 10:31:03,090 - INFO - Episode calculator_basic_003 completed: Success=True, Accuracy=1.00
+2025-01-15 10:31:03,091 - INFO - Starting episode contacts_add_004: Add new contact 'Sarah Johnson' with phone number 555-0123
+2025-01-15 10:31:04,156 - INFO - Step 1: Action='CLICK("Contacts")', Truth='CLICK("Contacts")', Match=True
+2025-01-15 10:31:05,234 - INFO - Step 2: Action='CLICK("Add")', Truth='CLICK("Add")', Match=True
+2025-01-15 10:31:06,178 - INFO - Step 3: Action='TYPE("Sarah Johnson")', Truth='TYPE("Sarah Johnson")', Match=True
+2025-01-15 10:31:07,123 - ERROR - Step 4: Action='CLICK("Email")', Truth='CLICK("Phone")', Match=False
+2025-01-15 10:31:08,089 - INFO - Step 5: Action='TYPE("555-0123")', Truth='TYPE("555-0123")', Match=True
+2025-01-15 10:31:09,067 - INFO - Step 6: Action='CLICK("Save")', Truth='CLICK("Save")', Match=True
+2025-01-15 10:31:09,068 - INFO - Episode contacts_add_004 completed: Success=False, Accuracy=0.83
+2025-01-15 10:31:09,069 - INFO - Starting episode photos_delete_005: Delete photo from gallery taken yesterday
+2025-01-15 10:31:10,145 - INFO - Step 1: Action='CLICK("Gallery")', Truth='CLICK("Gallery")', Match=True
+2025-01-15 10:31:11,234 - INFO - Step 2: Action='SCROLL("down")', Truth='SCROLL("down")', Match=True
+2025-01-15 10:31:12,178 - ERROR - Step 3: Action='CLICK("photo_01.jpg")', Truth='CLICK("photo_yesterday.jpg")', Match=False
+2025-01-15 10:31:13,123 - INFO - Step 4: Action='LONG_PRESS("photo")', Truth='LONG_PRESS("photo")', Match=True
+2025-01-15 10:31:14,089 - INFO - Step 5: Action='CLICK("Delete")', Truth='CLICK("Delete")', Match=True
+2025-01-15 10:31:15,067 - INFO - Step 6: Action='CLICK("Confirm")', Truth='CLICK("Confirm")', Match=True
+2025-01-15 10:31:15,068 - INFO - Episode photos_delete_005 completed: Success=False, Accuracy=0.83
+2025-01-15 10:31:15,069 - INFO - Starting episode maps_navigate_006: Navigate to Central Park using Google Maps
+2025-01-15 10:31:16,156 - INFO - Step 1: Action='CLICK("Maps")', Truth='CLICK("Maps")', Match=True
+2025-01-15 10:31:17,234 - INFO - Step 2: Action='CLICK("Search")', Truth='CLICK("Search")', Match=True
+2025-01-15 10:31:18,178 - INFO - Step 3: Action='TYPE("Central Park")', Truth='TYPE("Central Park")', Match=True
+2025-01-15 10:31:19,123 - INFO - Step 4: Action='CLICK("Search Button")', Truth='CLICK("Search Button")', Match=True
+2025-01-15 10:31:20,089 - INFO - Step 5: Action='CLICK("Directions")', Truth='CLICK("Directions")', Match=True
+2025-01-15 10:31:21,067 - INFO - Step 6: Action='CLICK("Start")', Truth='CLICK("Start")', Match=True
+2025-01-15 10:31:21,068 - INFO - Episode maps_navigate_006 completed: Success=True, Accuracy=1.00
+2025-01-15 10:31:21,069 - INFO - Starting episode music_play_007: Play song 'Bohemian Rhapsody' by Queen
+2025-01-15 10:31:22,156 - INFO - Step 1: Action='CLICK("Music")', Truth='CLICK("Music")', Match=True
+2025-01-15 10:31:23,234 - INFO - Step 2: Action='CLICK("Search")', Truth='CLICK("Search")', Match=True
+2025-01-15 10:31:24,178 - INFO - Step 3: Action='TYPE("Bohemian Rhapsody")', Truth='TYPE("Bohemian Rhapsody")', Match=True
+2025-01-15 10:31:25,123 - ERROR - Step 4: Action='CLICK("Play All")', Truth='CLICK("Bohemian Rhapsody - Queen")', Match=False
+2025-01-15 10:31:26,089 - INFO - Episode music_play_007 completed: Success=False, Accuracy=0.75
+2025-01-15 10:31:26,090 - INFO - Starting episode calendar_event_008: Create calendar event for 'Team Meeting' tomorrow at 2 PM
+2025-01-15 10:31:27,156 - INFO - Step 1: Action='CLICK("Calendar")', Truth='CLICK("Calendar")', Match=True
+2025-01-15 10:31:28,234 - INFO - Step 2: Action='CLICK("Add Event")', Truth='CLICK("Add Event")', Match=True
+2025-01-15 10:31:29,178 - INFO - Step 3: Action='TYPE("Team Meeting")', Truth='TYPE("Team Meeting")', Match=True
+2025-01-15 10:31:30,123 - INFO - Step 4: Action='CLICK("Date")', Truth='CLICK("Date")', Match=True
+2025-01-15 10:31:31,089 - INFO - Step 5: Action='CLICK("Tomorrow")', Truth='CLICK("Tomorrow")', Match=True
+2025-01-15 10:31:32,067 - INFO - Step 6: Action='CLICK("Time")', Truth='CLICK("Time")', Match=True
+2025-01-15 10:31:33,145 - ERROR - Step 7: Action='TYPE("14:00")', Truth='TYPE("2:00 PM")', Match=False
+2025-01-15 10:31:34,234 - INFO - Step 8: Action='CLICK("Save")', Truth='CLICK("Save")', Match=True
+2025-01-15 10:31:34,235 - INFO - Episode calendar_event_008 completed: Success=False, Accuracy=0.88
+2025-01-15 10:31:34,236 - INFO - Starting episode browser_search_009: Search for 'best pizza restaurants near me' in Chrome
+2025-01-15 10:31:35,178 - INFO - Step 1: Action='CLICK("Chrome")', Truth='CLICK("Chrome")', Match=True
+2025-01-15 10:31:36,123 - INFO - Step 2: Action='CLICK("Search Bar")', Truth='CLICK("Search Bar")', Match=True
+2025-01-15 10:31:37,089 - INFO - Step 3: Action='TYPE("best pizza restaurants near me")', Truth='TYPE("best pizza restaurants near me")', Match=True
+2025-01-15 10:31:38,067 - INFO - Step 4: Action='CLICK("Search")', Truth='CLICK("Search")', Match=True
+2025-01-15 10:31:38,068 - INFO - Episode browser_search_009 completed: Success=True, Accuracy=1.00
+2025-01-15 10:31:38,069 - INFO - Starting episode phone_call_010: Make a phone call to contact 'Mom'
+2025-01-15 10:31:39,145 - INFO - Step 1: Action='CLICK("Phone")', Truth='CLICK("Phone")', Match=True
+2025-01-15 10:31:40,234 - INFO - Step 2: Action='CLICK("Contacts")', Truth='CLICK("Contacts")', Match=True
+2025-01-15 10:31:41,178 - INFO - Step 3: Action='CLICK("Mom")', Truth='CLICK("Mom")', Match=True
+2025-01-15 10:31:42,123 - INFO - Step 4: Action='CLICK("Call")', Truth='CLICK("Call")', Match=True
+2025-01-15 10:31:42,124 - INFO - Episode phone_call_010 completed: Success=True, Accuracy=1.00
+2025-01-15 10:31:42,125 - INFO - Evaluation completed successfully
+2025-01-15 10:31:42,126 - INFO - Final Results: 7/10 episodes successful (70% success rate)
+2025-01-15 10:31:42,127 - INFO - Overall step accuracy: 50/68 steps correct (73.5% accuracy)
+2025-01-15 10:31:42,128 - INFO - Results saved to results_gpt-4_few_shot.json
+2025-01-15 10:31:42,129 - INFO - Generating performance plots and analysis reports
+2025-01-15 10:31:45,567 - INFO - All analysis files generated successfully

@@ -1,0 +1,41 @@
+OVERALL PERFORMANCE:
+Total Episodes: 10
+Episode Success Rate: 70.00%
+Average Step Accuracy: 73.53%
+Total Steps: 68
+Correct Steps: 50
+
+FAILURE ANALYSIS:
+Total Failures: 3
+Failure Rate: 30.00%
+Average Failure Step: 3.7
+
+FAILURE TIMING:
+early_failures: 2
+mid_failures: 4
+late_failures: 1
+
+TOP PERFORMING EPISODES:
+1. calculator_basic_003: 100.00% accuracy
+2. maps_navigate_006: 100.00% accuracy
+3. browser_search_009: 100.00% accuracy
+4. phone_call_010: 100.00% accuracy
+5. calendar_event_008: 87.50% accuracy
+
+LOWEST PERFORMING EPISODES:
+1. settings_wifi_002: 60.00% accuracy
+2. music_play_007: 75.00% accuracy
+3. contacts_add_004: 83.33% accuracy
+4. photos_delete_005: 83.33% accuracy
+5. gmail_compose_001: 85.71% accuracy
+
+COMMON ERROR PATTERNS:
+- UI Element Selection: 8 incorrect element selections
+- Text Input Formatting: 3 formatting mismatches
+- Action Sequence: 2 out-of-order actions
+
+RECOMMENDATIONS:
+1. Improve UI element identification accuracy
+2. Enhance text input format validation
+3. Add context-aware action sequencing
+4. Consider multi-step planning for complex tasks

@@ -1,0 +1,181 @@
+{
+  "evaluation_metadata": {
+    "model": "gpt-4",
+    "prompt_template": "few_shot",
+    "timestamp": "2025-01-15T10:30:45Z",
+    "total_episodes": 10,
+    "dataset_path": "android_world_data/",
+    "evaluation_duration_seconds": 342.7
+  },
+  "episode_results": [
+    {
+      "episode_id": "gmail_compose_001",
+      "goal": "Compose and send an email to john@example.com with subject 'Meeting Tomorrow'",
+      "episode_success": true,
+      "step_accuracy": 0.85,
+      "total_steps": 7,
+      "correct_steps": 6,
+      "failure_points": [],
+      "step_details": [
+        {
+          "step": 1,
+          "observation": {"app": "Gmail", "ui_elements": ["Compose", "Search", "Settings"]},
+          "predicted_action": "CLICK(\"Compose\")",
+          "ground_truth_action": "CLICK(\"Compose\")",
+          "match": true
+        },
+        {
+          "step": 2,
+          "observation": {"app": "Gmail", "ui_elements": ["To", "Subject", "Body"]},
+          "predicted_action": "CLICK(\"To\")",
+          "ground_truth_action": "CLICK(\"To\")",
+          "match": true
+        },
+        {
+          "step": 3,
+          "observation": {"app": "Gmail", "ui_elements": ["text_input", "contacts"]},
+          "predicted_action": "TYPE(\"john@example.com\")",
+          "ground_truth_action": "TYPE(\"john@example.com\")",
+          "match": true
+        },
+        {
+          "step": 4,
+          "observation": {"app": "Gmail", "ui_elements": ["Subject", "Body", "Send"]},
+          "predicted_action": "CLICK(\"Subject\")",
+          "ground_truth_action": "CLICK(\"Subject\")",
+          "match": true
+        },
+        {
+          "step": 5,
+          "observation": {"app": "Gmail", "ui_elements": ["subject_input"]},
+          "predicted_action": "TYPE(\"Meeting Tomorrow\")",
+          "ground_truth_action": "TYPE(\"Meeting Tomorrow\")",
+          "match": true
+        },
+        {
+          "step": 6,
+          "observation": {"app": "Gmail", "ui_elements": ["Body", "Send", "Draft"]},
+          "predicted_action": "CLICK(\"Body\")",
+          "ground_truth_action": "CLICK(\"Body\")",
+          "match": true
+        },
+        {
+          "step": 7,
+          "observation": {"app": "Gmail", "ui_elements": ["Send", "Draft", "Attach"]},
+          "predicted_action": "CLICK(\"Send\")",
+          "ground_truth_action": "CLICK(\"Send\")",
+          "match": false
+        }
+      ]
+    },
+    {
+      "episode_id": "settings_wifi_002",
+      "goal": "Enable WiFi and connect to network 'HomeNetwork'",
+      "episode_success": false,
+      "step_accuracy": 0.60,
+      "total_steps": 5,
+      "correct_steps": 3,
+      "failure_points": [3, 4],
+      "step_details": [
+        {
+          "step": 1,
+          "observation": {"app": "Settings", "ui_elements": ["WiFi", "Bluetooth", "Display"]},
+          "predicted_action": "CLICK(\"WiFi\")",
+          "ground_truth_action": "CLICK(\"WiFi\")",
+          "match": true
+        },
+        {
+          "step": 2,
+          "observation": {"app": "Settings", "ui_elements": ["WiFi Toggle", "Available Networks"]},
+          "predicted_action": "CLICK(\"WiFi Toggle\")",
+          "ground_truth_action": "CLICK(\"WiFi Toggle\")",
+          "match": true
+        },
+        {
+          "step": 3,
+          "observation": {"app": "Settings", "ui_elements": ["HomeNetwork", "OfficeWiFi", "Scan"]},
+          "predicted_action": "CLICK(\"OfficeWiFi\")",
+          "ground_truth_action": "CLICK(\"HomeNetwork\")",
+          "match": false
+        },
+        {
+          "step": 4,
+          "observation": {"app": "Settings", "ui_elements": ["Password", "Connect", "Cancel"]},
+          "predicted_action": "TYPE(\"wrongpassword\")",
+          "ground_truth_action": "TYPE(\"homepass123\")",
+          "match": false
+        },
+        {
+          "step": 5,
+          "observation": {"app": "Settings", "ui_elements": ["Connect", "Cancel", "Show Password"]},
+          "predicted_action": "CLICK(\"Connect\")",
+          "ground_truth_action": "CLICK(\"Connect\")",
+          "match": true
+        }
+      ]
+    },
+    {
+      "episode_id": "calculator_basic_003",
+      "goal": "Calculate 15 * 8 + 22",
+      "episode_success": true,
+      "step_accuracy": 1.0,
+      "total_steps": 6,
+      "correct_steps": 6,
+      "failure_points": [],
+      "step_details": [
+        {
+          "step": 1,
+          "observation": {"app": "Calculator", "ui_elements": ["1", "5", "+", "*", "="]},
+          "predicted_action": "CLICK(\"1\")",
+          "ground_truth_action": "CLICK(\"1\")",
+          "match": true
+        },
+        {
+          "step": 2,
+          "observation": {"app": "Calculator", "ui_elements": ["5", "+", "*", "=", "Clear"]},
+          "predicted_action": "CLICK(\"5\")",
+          "ground_truth_action": "CLICK(\"5\")",
+          "match": true
+        },
+        {
+          "step": 3,
+          "observation": {"app": "Calculator", "ui_elements": ["*", "+", "-", "/", "="]},
+          "predicted_action": "CLICK(\"*\")",
+          "ground_truth_action": "CLICK(\"*\")",
+          "match": true
+        },
+        {
+          "step": 4,
+          "observation": {"app": "Calculator", "ui_elements": ["8", "9", "0", "+", "="]},
+          "predicted_action": "CLICK(\"8\")",
+          "ground_truth_action": "CLICK(\"8\")",
+          "match": true
+        },
+        {
+          "step": 5,
+          "observation": {"app": "Calculator", "ui_elements": ["+", "-", "*", "/", "="]},
+          "predicted_action": "CLICK(\"+\")",
+          "ground_truth_action": "CLICK(\"+\")",
+          "match": true
+        },
+        {
+          "step": 6,
+          "observation": {"app": "Calculator", "ui_elements": ["2", "3", "4", "=", "Clear"]},
+          "predicted_action": "CLICK(\"2\")",
+          "ground_truth_action": "CLICK(\"2\")",
+          "match": true
+        }
+      ]
+    }
+  ],
+  "aggregate_metrics": {
+    "total_episodes": 10,
+    "episode_success_rate": 0.70,
+    "average_step_accuracy": 0.73,
+    "total_steps": 68,
+    "total_correct_steps": 50,
+    "average_episode_length": 6.8,
+    "failure_rate": 0.30,
+    "common_failure_points": [3, 4, 5]
+  }
+}

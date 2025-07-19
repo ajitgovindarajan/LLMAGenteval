@@ -1,0 +1,10 @@
+# prompts/base_prompt.txt
+Goal: {goal}
+Observation:
+- App: {app}
+- UI Elements: {ui_elements}
+
+What is the next best action to achieve the goal? Respond in the format:
+CLICK("element_name") or SCROLL("direction") or TYPE("text")
+
+Action:

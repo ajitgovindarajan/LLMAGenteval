@@ -1,0 +1,29 @@
+# prompts/self_reflection.txt
+Goal: {goal}
+Observation:
+- App: {app}
+- UI Elements: {ui_elements}
+
+Before choosing an action, analyze the situation:
+
+1. Current State Analysis:
+   - What app am I currently in?
+   - What UI elements are available?
+   - What is the current context?
+
+2. Goal Analysis:
+   - What is my ultimate goal?
+   - What are the steps needed to achieve it?
+   - Where am I in the process?
+
+3. Action Planning:
+   - Which available UI element will move me closer to the goal?
+   - Are there any intermediate steps I need to take?
+   - What would be the consequences of each possible action?
+
+4. Decision:
+   - Based on the analysis above, what is the best next action?
+
+Please format your response as:
+Reasoning: [Your step-by-step analysis]
+Action: [Your chosen action in format CLICK("element") or SCROLL("direction") or TYPE("text")]

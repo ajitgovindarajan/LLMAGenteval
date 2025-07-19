@@ -1,0 +1,41 @@
+# prompts/few_shot.txt
+You are an Android app automation agent. Here are some examples of how to respond:
+
+Example 1:
+Goal: Open calculator app
+Observation:
+- App: Home
+- UI Elements: ["Calculator", "Settings", "Chrome", "Gallery"]
+Action: CLICK("Calculator")
+
+Example 2:
+Goal: Uninstall the Slack app
+Observation:
+- App: Settings
+- UI Elements: ["Apps", "Display", "Sound", "Security"]
+Action: CLICK("Apps")
+
+Example 3:
+Goal: Send message "Hello world"
+Observation:
+- App: Messages
+- UI Elements: ["Compose", "Search", "Settings", "Recent"]
+Action: CLICK("Compose")
+
+Example 4:
+Goal: Search for "weather" in browser
+Observation:
+- App: Chrome
+- UI Elements: ["Address bar", "Bookmarks", "Menu", "Tabs"]
+Action: CLICK("Address bar")
+
+Now for the current task:
+Goal: {goal}
+Observation:
+- App: {app}
+- UI Elements: {ui_elements}
+
+What is the next best action to achieve the goal? Respond in the format:
+CLICK("element_name") or SCROLL("direction") or TYPE("text")
+
+Action:
