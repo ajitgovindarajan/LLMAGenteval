@@ -1,0 +1,30 @@
+
+{
+  "benchmark_configs": [
+    {
+      "model": "gpt-4",
+      "prompt_template": "base",
+      "api_key": "your_openai_key"
+    },
+    {
+      "model": "gpt-4",
+      "prompt_template": "few_shot",
+      "api_key": "your_openai_key"
+    },
+    {
+      "model": "gpt-4",
+      "prompt_template": "self_reflection",
+      "api_key": "your_openai_key"
+    },
+    {
+      "model": "claude-3-sonnet",
+      "prompt_template": "base",
+      "api_key": "your_anthropic_key"
+    },
+    {
+      "model": "claude-3-sonnet",
+      "prompt_template": "few_shot",
+      "api_key": "your_anthropic_key"
+    }
+  ]
+}

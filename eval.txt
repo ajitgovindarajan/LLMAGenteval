@@ -1,0 +1,5 @@
+# Basic evaluation
+python src/main.py --data_path /path/to/android_world --model gpt-4 --prompt_template few_shot --api_key YOUR_KEY
+
+# Comprehensive benchmark
+python src/benchmark.py --data_path /path/to/android_world --config_file example_config.json --num_episodes 20
