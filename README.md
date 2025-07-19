@@ -1,5 +1,7 @@
-QualGent Research Coding Challenge: Evaluating LLM
-Agents in Android World
+QualGent Research Coding Challenge: Evaluating LLMAgents in Android World
+
+
+
 Objective
 Design a lightweight evaluation framework to test how well LLMs can act as agents in mobile
 environments, using the android_world benchmark. You’ll evaluate LLMs' ability to navigate
